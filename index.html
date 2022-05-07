@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TaskRabbit</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="Images\favicon.png">
+  <!-- css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- bootstrap  -->
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<!-- navbar -->
+<header class="top-nav">
+  <div class="topnav container-fluid">
+    <img class="logo" src="Images\taskrabbit logo.svg" alt="logo">
+    <div class="topnav-right">
+      <a class="topnav-text location" href="#Locations">Locations</a>
+      <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" class="topnav-text services" href="Services">Services</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">POPULAR TASKS</a></li>
+        <li><a class="dropdown-item" href="#"></a></li>
+        <li><a class="dropdown-item" href="#">Furniture Assembly</a></li>
+        <li><a class="dropdown-item" href="#">TV Mounting</a></li>
+        <li><a class="dropdown-item" href="#">Handyman</a></li>
+        <li><a class="dropdown-item" href="#">Yard Work</a></li>
+        <li><a class="dropdown-item" href="#">Help Moving</a></li>
+        <li><a class="dropdown-item" href="#">Delivery Service</a></li>
+        <li><a class="dropdown-item" href="#">Grocery Shopping & Delivery</a></li>
+        <li><a class="dropdown-item" href="#">Painting</a></li>
+        <li><a class="dropdown-item" href="#">Lawn Care Services</a></li>
+        <li><a class="dropdown-item" href="#">Lighting Installation</a></li>
+        <li><a class="dropdown-item" href="#">Hang Pictures</a></li>
+      </ul>
+      <a class="topnav-text login" href="#Login">Sign up / Login</a>
+      <button type="button" class="nav-button" name="button">Become a Tasker</button>
+    </div>
+
+    <!-- MEDIA QUERY NAVBAR -->
+    <div class="media-query">
+      <span class="side-button" onclick="openNav()">&#9776;</span>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Location</a>
+        <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Services</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">POPULAR TASKS</a></li>
+          <li><a class="dropdown-item" href="#"></a></li>
+          <li><a class="dropdown-item" href="#">Furniture Assembly</a></li>
+          <li><a class="dropdown-item" href="#">TV Mounting</a></li>
+          <li><a class="dropdown-item" href="#">Handyman</a></li>
+          <li><a class="dropdown-item" href="#">Yard Work</a></li>
+          <li><a class="dropdown-item" href="#">Help Moving</a></li>
+          <li><a class="dropdown-item" href="#">Delivery Service</a></li>
+          <li><a class="dropdown-item" href="#">Grocery Shopping & Delivery</a></li>
+          <li><a class="dropdown-item" href="#">Painting</a></li>
+          <li><a class="dropdown-item" href="#">Lawn Care Services</a></li>
+          <li><a class="dropdown-item" href="#">Lighting Installation</a></li>
+          <li><a class="dropdown-item" href="#">Hang Pictures</a></li>
+        </ul>
+        <a href="#">Sign up/ Login</a>
+        <a href="#"><button type="button" class="nav-button" name="button">Become a Tasker</button></a>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<body>
+
+  <!-- 1st div -->
+  <div class="first-div">
+    <img class="background-image" src="Downloaded images\pexels-karolina-grabowska.jpg" alt="cleaning">
+    <div class="first-div-container">
+      <h1 class="first-div-h1">Your house</h1>
+      <h1 class="first-div-h1">deserves better.</h1>
+      <div class="hero-separator">
+        <!-- used this part to create empty space to used as horizontal line -->
+      </div>
+      <p>Spring cleaning with the help of a trusted Tasker.</p>
+      <form class="search-form" action="index.html" method="post">
+        <input class="firstform" type="text" name="search box" placeholder="I need help with....">
+        <button type="button" class="search-button" name="button">Get help today</button>
+      </form>
+      <div class="container-fluid">
+        <button type="button" class="first-div-buttons" name="button">Furniture Assembly</button>
+        <button type="button" class="first-div-buttons" name="button">IKEA Furniture Assembly</button>
+        <button type="button" class="first-div-buttons" name="button">Home Repairs</button>
+        <button type="button" class="first-div-buttons slide" name="button">Help Moving</button>
+        <button type="button" class="first-div-buttons slide" name="button">Cleaning</button>
+        <button type="button" class="first-div-buttons slide" name="button">Yard work</button>
+        <p class="seemore">See more</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTNERS -->
+  <div class="partners container-fluid row">
+    <div class="col-md-4">
+      <p>
+        <img class="star" src="Downloaded images\star.png" alt="star">
+        <img class="star" src="Downloaded images\star.png" alt="star">
+        <img class="star" src="Downloaded images\star.png" alt="star">
+        <img class="star" src="Downloaded images\star.png" alt="star">
+        <img class="star" src="Downloaded images\star.png" alt="star">
+        <span class="star-text">1.1+ Million Reviews</span>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <p><img src="Images\IKEA-logo-mw@2x.png" alt="ikea-logo"><span class="star-text">Partnered with IKEA</span></p>
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="download-button apple" name="button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="download-button android" name="button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </div>
+
+  <!-- POPULAR PROJECTS -->
+  <div class="popular-projects">
+    <div class="container popular-projects-container">
+      <h2 class="popular-projects-text">Popular projects in your area</h2>
+      <div class="row">
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\phone.jpg" class="card-img-top" alt="phone-repair.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Phone Repairs</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\carpenter.jpg" class="card-img-top" alt="carpenter.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Carpentering and woodwork</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\shopping.jpg" class="card-img-top" alt="shopping.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Grocery shopping</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\construction worker (2).jpg" class="card-img-top" alt="construction-worker.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Building and construction</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\electrician.jpg" class="card-img-top" alt="electrician.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Electrical works</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\mechanic.jpg" class="card-img-top" alt="mechanic.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Mechanical Services</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\welder.jpg" class="card-img-top" alt="welder.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Welding Services</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\furniture assembly.jpg" class="card-img-top" alt="furniture-assembly.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">Furniture Assembling</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-div col-lg-4 col-md-6">
+          <div class="card first-card">
+            <img src="Downloaded images\solar panel installation.jpg" class="card-img-top" alt="panel-installation.jpeg">
+            <div class="card-body card-color">
+              <p class="card-text">solar panel installation</p>
+              <p>🏷️ Avg. project: $25-$60</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVERYDAY -->
+  <div class="everyday">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="carrying-box" src="Downloaded images\carrying box.jpg" alt="tasker.jpeg">
+        </div>
+        <div class="col-lg-6 everyday-text">
+          <p class="everyday-h1">Everyday life made easier</p>
+          <p class="everyday-p">When life gets busy, you don’t have to tackle it alone. Get time back for what you love without breaking the bank.</p>
+          <ul class="everyday-li">
+            <dd>
+              <p>✔️ Choose your Tasker by reviews, skills, and price</p>
+            </dd>
+            <dd>
+              <p>✔️ Schedule when it works for you — as early as today</p>
+            </dd>
+            <dd>
+              <p>✔️ Chat, pay, tip, and review all through one platform</p>
+            </dd>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED TASKERS -->
+  <div class="featured-taskers">
+    <div class="container featured-container">
+      <h1 class="featured-h1">Featured Taskers</h1>
+
+      <div class="row">
+
+        <div class="second-card col-lg-5">
+          <div class="row first-feature">
+            <div class="col-sm-4">
+              <img src="Images\old worker.jpg" class="img-fluid oldworker rounded-start" alt="old-worker.jpeg">
+            </div>
+            <div class="col-sm-8">
+              <div class="card-body featured-taskers-body">
+                <p class="card-title">Jeffrey C.</p>
+                <p class="second-card-text">⭐100% positive reviews</p>
+                <p class="second-card-text">✔174 completed tasks</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-separator">
+            <!-- used this part to create empty space to used as horizontal line -->
+          </div>
+          <div class="featured-text">
+            <p class="featured-skills">Featured Skills</p>
+            <p class="feature-comment">Help Moving <span class="span-right">$41.17/hr</span></p>
+            <p class="feature-comment">Home Repairs <span class="span-right">$37.64/hr</span></p>
+            <p class="feature-comment">Furniture Assembly <span class="span-right">$35.29/hr</span></p>
+          </div>
+          <div class="card-separator">
+            <!-- used this part to create empty space to used as horizontal line -->
+          </div>
+          <div class="bottom-feature">
+            <p class="last-feature-text">I'm the right person for the job:</p>
+            <p class="last-feature">I have supplies and resources available for helping you with your move ins, move outs and move aroun...</p>
+          </div>
+        </div>
+
+
+        <div class="second-card col-lg-5">
+          <div class="row first-feature">
+            <div class="col-sm-4">
+              <img src="Images\plated hair worker.jpg" class="img-fluid young-worker rounded-start" alt="plated hair worker.jpg">
+            </div>
+            <div class="col-sm-8">
+              <div class="card-body featured-taskers-body">
+                <p class="card-title">Dmitri W.</p>
+                <p class="second-card-text">⭐98% positive reviews</p>
+                <p class="second-card-text">✔294 completed tasks</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-separator">
+            <!-- used this part to create empty space to used as horizontal line -->
+          </div>
+          <div class="featured-text">
+            <p class="featured-skills">Featured Skills</p>
+            <p class="feature-comment">Shopping <span class="span-right">$29.41/hr</span></p>
+            <p class="feature-comment">Delivery <span class="span-right">$30.58/hr</span></p>
+            <p class="feature-comment">Help Moving <span class="span-right">$65.88/hr</span></p>
+          </div>
+          <div class="card-separator">
+            <!-- used this part to create empty space to used as horizontal line -->
+          </div>
+          <div class="bottom-feature">
+            <p class="last-feature-text">I'm the right person for the job:</p>
+            <p class="last-feature">Anything you need purchased I can do for you. Live in midtown, know the city pretty well and am read...</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GOTO TEAM -->
+  <div class="goto-team">
+    <div class="container">
+      <div class="goto row">
+
+        <div class="col-lg-6">
+          <img class="goto-img" src="Downloaded images\goto team.jpg" alt="goto team pic.jpeg">
+        </div>
+        <div class="goto-text col-lg-6">
+          <p class="everyday-h1">A go-to team at your fingertips</p>
+          <p class="everyday-p">Build your team of local, background-checked Taskers to help with — and for — life. Whatever you need, they’ve got it covered.</p>
+          <ul class="everyday-li">
+            <dd>
+              <p>✔️ Compare Tasker reviews, ratings, and prices</p>
+            </dd>
+            <dd>
+              <p>✔️ Choose and connect with the best person for the job</p>
+            </dd>
+            <dd>
+              <p>✔️ Save your favorites to book again and again</p>
+            </dd>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CITIES -->
+  <div class="city-div">
+    <p class="city-p">Cities where we work - TaskRabbit</p>
+    <form class="city-form" action="index.html" method="post">
+      <div class="container-fluid">
+        <input type="text" class="city-searchbox" name="search box" placeholder="📍 search by zip code"></input>
+        <button type="button" class="search-button search-city-button" name="button">Check Availability</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ZIPCODE -->
+  <div class="container-fluid zipcode">
+    <div class="zipcode row">
+      <div class="col-lg-3 col-sm-6 zipcode-col">
+        <img class="globe-img" src="Downloaded images\globe.png" alt="globe">
+        <p class="zip-text">
+          <!-- <span class="zip-top-text"></span> -->
+          <span class="zip-top-text">Phoenix</span> <br>
+          Tucson <br>
+          <br>
+          <span class="zip-top-text">Fresno</span> <br>
+          LA & OC <br>
+          SF Bay Area <br>
+          Sacramento <br>
+          San Diego <br>
+          <br>
+          <span class="zip-top-text">Colorado</span> <br>
+          Denver <br>
+          <br>
+          <span class="zip-top-text">Connecticut</span> <br>
+          New Haven <br>
+          <br>
+          <span class="zip-top-text">District of Columbia</span> <br>
+          Washington DC <br>
+          <br>
+          <span class="zip-top-text">Florida</span> <br>
+          Jacksonville <br>
+          Miami <br>
+          Orlando <br>
+          Tampa/St. Petersburg <br>
+          <br>
+          <span class="zip-top-text">Georgia</span> <br>
+          Atlanta <br>
+          Columbus GA
+          <br>
+          <span class="zip-top-text">Oregon</span> <br>
+          Portland <br>
+        </p>
+      </div>
+      <div class="col-lg-3 col-sm-6 zipcode-col">
+        <p class="zip-text">
+          <span class="zip-top-text">Hawaii</span> <br>
+          Honolulu <br>
+          <br>
+          <span class="zip-top-text">Idaho</span> <br>
+          Boise <br>
+          <br>
+          <span class="zip-top-text">California</span> <br>
+          Illinois <br>
+          Chicago <br>
+          <br>
+          <span class="zip-top-text">Indiana</span> <br>
+          Indianapolis <br>
+          <br>
+          <span class="zip-top-text">Iowa</span> <br>
+          Des Moines <br>
+          <br>
+          <span class="zip-top-text">Kansas</span> <br>
+          Wichita <br>
+          <br>
+          <span class="zip-top-text">Kentucky</span> <br>
+          Louisville <br>
+          <br>
+          <span class="zip-top-text">Louisiana</span> <br>
+          Baton Rouge <br>
+          New Orleans <br>
+          <br>
+          <span class="zip-top-text">Maryland</span> <br>
+          Baltimore <br>
+          <br>
+          <span class="zip-top-text">Massachusetts</span> <br>
+          Boston <br>
+          <br>
+          <span class="zip-top-text">Michigan</span> <br>
+          Ann Arbor/Detroit <br>
+          <br>
+          <span class="zip-top-text">Minnesota</span> <br>
+          Minneapolis/St. Paul
+        </p>
+      </div>
+      <div class="col-lg-3 col-sm-6 zipcode-col">
+        <p class="zip-text">
+          <span class="zip-top-text">Missouri</span> <br>
+          Kansas City <br>
+          St. Louis <br>
+          <br>
+          <span class="zip-top-text">Nebraska</span> <br>
+          Omaha <br>
+          <br>
+          <span class="zip-top-text">Nevada</span> <br>
+          Las Vegas <br>
+          Reno <br>
+          <br>
+          <span class="zip-top-text">California</span> <br>
+          New Mexico <br>
+          Albuquerque <br>
+          <br>
+          <span class="zip-top-text">California</span> <br>
+          New York <br>
+          Albany / Capital Region <br>
+          New York City <br>
+          <br>
+          <span class="zip-top-text">North Carolina</span> <br>
+          Charlotte <br>
+          Raleigh/Durham <br>
+          <br>
+          <span class="zip-top-text">Ohio</span> <br>
+          Cincinnati <br>
+          Cleveland <br>
+          Columbus <br>
+          <br>
+          <span class="zip-top-text">Oklahoma</span> <br>
+          Oklahoma City <br>
+          Tulsa <br>
+          <br>
+          <span class="zip-top-text">Pennsylvania</span> <br>
+          Philadelphia <br>
+          Pittsburgh
+        </p>
+      </div>
+      <div class="col-lg-3 col-sm-6 zipcode-col">
+        <p class="zip-text">
+          <span class="zip-top-text">South Carolina</span> <br>
+          Charleston <br>
+          <br>
+          <span class="zip-top-text">Tennessee</span> <br>
+          Memphis <br>
+          Nashville <br>
+          <br>
+          <span class="zip-top-text">Texas</span> <br>
+          Austin <br>
+          Corpus Christi <br>
+          Dallas/Fort Worth <br>
+          El Paso <br>
+          Houston <br>
+          San Antonio <br>
+          <br>
+          <span class="zip-top-text">Utah</span> <br>
+          Salt Lake City <br>
+          <br>
+          <span class="zip-top-text">Virginia</span> <br>
+          Norfolk-Portsmth-Newpt Nws <br>
+          Richmond <br>
+          <br>
+          <span class="zip-top-text">Washington</span> <br>
+          Seattle <br>
+          <br>
+          <span class="zip-top-text">Wisconsin</span> <br>
+          Milwaukee <br>
+          <br>
+          <span class="zip-top-text other-countries">Other Countries</span> <br>
+          United Kingdom <br>
+          Canada <br>
+          France <br>
+          Germany <br>
+          Spain <br>
+          Portugal <br>
+          Italy <br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET MORE -->
+  <div class="getmore">
+    <div class="container getmore-container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="getmore-img" src="Downloaded images\getmore 0.jpg" alt="getmore.jpg">
+        </div>
+        <div class="col-lg-6 getmore-text">
+          <p class="everyday-h1">A go-to team at your fingertips</p>
+          <p class="everyday-p">Build your team of local, background-checked Taskers to help with — and for — life. Whatever you need, they’ve got it covered.</p>
+          <form class="getmore-form" action="index.html" method="post">
+            <div class="container">
+              <input type="text" class="getmore-searchbox" name="search box" placeholder="Enter your mobile number"></input>
+              <button type="button" class="search-button" name="button">Get the app</button>
+            </div>
+          </form>
+          <div class="container getmore-button-container">
+            <button type="button" class="getmore-apple getmore-button" name="button"><i class="fab fa-apple"></i> Apple Store</button>
+            <button type="button" class="getmore-android getmore-button" name="button"><i class="fab fa-google-play"></i> Google Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORD -->
+  <div class="word">
+    <div class="container-fluid">
+      <p class="everyday-h1">Don't just take our word for it</p>
+      <p class="everyday-p word-h2">See how Taskers are saving the day for people like you.</p>
+      <div class="word-container">
+        <div class="row">
+
+          <div class="col-md-6 word-div">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="word-img" src="Downloaded images\leaf.png" alt="leaf.jpeg">
+              </div>
+              <div class="col-sm-9">
+                <h3 class="word-h3">Crime T.
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                </h3>
+                <p class="word-p1">"Wilson was fantastic! Easy to work with, efficient, and went above and beyond when the task ended up being much larger/longer than we ant..." <br>
+                  <span class="word-p2">October 18, 2019, New York City</span> <br>
+                  <span class="word-p3">Delivery</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 word-div">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="word-img" src="Downloaded images\word worker-1.jpg" alt="worker-1.jpg">
+              </div>
+              <div class="col-sm-9">
+                <h3 class="word-h3">Cameron S.
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                </h3>
+                <p class="word-p1">"Essra was a pleasure to work with. Punctual, friendly, helpful and really knows how to pack a storage unit for maximum efficiency. Will h..."<br>
+                  <span class="word-p2">October 14, 2019, LA & OC</span> <br>
+                  <span class="word-p3">Help Moving</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="word-p">more...</p>
+
+
+          <div class="col-md-6 word-div word-hide">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="word-img" src="Downloaded images\word worker-2.jpg" alt="worker-1.jpg">
+              </div>
+              <div class="col-sm-9">
+                <h3 class="word-h3">Taylor B.
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                </h3>
+                <p class="word-p1">"Dmitriy was great! Was fast to respond to the job, worked quickly but professionally, and had all the appropriate tools. Would recommend "<br>
+                  <span class="word-p2">October 11, 2019, LA & OC</span> <br>
+                  <span class="word-p3">Mounting</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 word-div word-hide">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="word-img" src="Downloaded images\word worker-3.jpg" alt="worker-1.jpg">
+              </div>
+              <div class="col-sm-9">
+                <h3 class="word-h3">Julian C.
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                </h3>
+                <p class="word-p1">"Hermann did a fantastic job installing a new AC unit in our house. His communication was excellent and he did really detailed work. I wil..."<br>
+                  <span class="word-p2">October 06, 2019, Tampa/St. Petersburg</span> <br>
+                  <span class="word-p3">Home Repairs</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 word-div word-hide">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="word-img" src="Downloaded images\word worker-4.jpg" alt="worker-1.jpg">
+              </div>
+              <div class="col-sm-9">
+                <h3 class="word-h3">Lisa J.
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                </h3>
+                <p class="word-p1">"Laura is AMAZING. She is, by far, the BEST we've found on TaskRabbit for cleaning jobs. She is extremely detailed and efficient. I defini..."<br>
+                  <span class="word-p2">October 01, 2019, Atlanta</span> <br>
+                  <span class="word-p3">Cleaning</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 word-div word-hide">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="word-img" src="Downloaded images\word worker-5.jpg" alt="worker-1.jpg">
+              </div>
+              <div class="col-sm-9">
+                <h3 class="word-h3">Donald L.
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                  <img class="star-sm" src="Downloaded images\star.png" alt="star">
+                </h3>
+                <p class="word-p1">"Nick did an outstanding job assembling my patio heater, and he got it done faster than I could have imagined. He also has a very pleasan..."<br>
+                  <span class="word-p2">October 01, 2019, SF Bay Area</span> <br>
+                  <span class="word-p3">Furniture Assembly</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET INSPIRED -->
+  <div class="get-inspired">
+    <div class="container-fluid">
+      <p class="inspired-h1">Get inspired</p>
+      <p class="inspired-p">Explore tips, home tours, and Tasker stories.</p>
+    </div>
+    <div class="row container-fluid inspired-people-div">
+      <div class="col-md-8 inspired-people-img">
+        <img class="inspired-people" src="Images\tasker-stories@729w.jpg" alt="\inspired people.jpg">
+      </div>
+      <div class="col-md-4 inspired-text">
+        <h4>Tasker Stories</h4>
+        </p>
+        <p>See the stories of Taskers who have helped make everyday life easier for people around the world.</p>
+        <p><span class="word-p3">Read more</span></p>
+      </div>
+    </div>
+
+    <p class="seemore-articles">See more articles</p>
+
+    <div class="container-fluid articles-div">
+      <div class="row">
+        <div class="inspired-card col-lg-4">
+          <div class="card french inspired-card-div">
+            <img src="Downloaded images\french.jpg" class="card-img-top" alt="french.jpg">
+            <div class="card-body card-color">
+              <p class="card-body card-color-text">Tour a French Chateau Inspired Post-Breakup Sanctuary</p>
+              <p><span class="word-p3">Read more</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="inspired-card col-lg-4">
+          <div class="card space inspired-card-div">
+            <img src="Downloaded images\space.jpg" class="card-img-top" alt="space.jpg">
+            <div class="card-body card-color">
+              <p class="card-body card-color-text">21 Subtle Ways to Maximize Any Tiny Space</p>
+              <p><span class="word-p3">Read more</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="inspired-card col-lg-4">
+          <div class="card handywomen inspired-card-div">
+            <img src="Downloaded images\handywoman.jpg" class="card-img-top" alt="handywomen.jpg">
+            <div class="card-body card-color">
+              <p class="card-body card-color-text">Meet the Handywomen of TaskRabbit working</p>
+              <p><span class="word-p3">Read more</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET STARTED -->
+  <div class="started container-fluid">
+    <h2 class="ready-h1">Ready to get started?</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="ready-div ready-div1">
+          <img src="Images\client-sign-up-img.png" alt="client-sign-up-img.png">
+          <p class="ready-text">Hear that? The sweet sigh of relief. Start getting more done.</p>
+          <button type="button" class="search-button ready-button" name="button">Sign up</button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ready-div ready-div2">
+          <img src="Images\become-a-tasker-img.png" alt="become-a-tasker-img.png">
+          <p class="ready-text">Grow your own business while saving the day for busy neighbors.</p>
+          <button type="button" class="search-button ready-button" name="button">Become a Tasker</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GET HELP -->
+  <div class="container-fluid get-help-div">
+    <h2 class="ready-h1">Get help today</h2>
+    <div>
+      <button type="button" class="get-help-button" name="button">Furniture Assembly</button>
+      <button type="button" class="get-help-button" name="button">IKEA Furniture Assembly</button>
+      <button type="button" class="get-help-button" name="button">Home Repairs</button>
+      <button type="button" class="get-help-button" name="button">Help Moving</button>
+      <button type="button" class="get-help-button" name="button">Cleaning</button>
+      <button type="button" class="get-help-button" name="button">Yard work</button>
+      <button type="button" class="get-help-button" name="button">Handyman Services</button>
+      <button type="button" class="get-help-button" name="button">Hauling Services</button>
+      <button type="button" class="get-help-button" name="button">Help Moving</button>
+      <button type="button" class="get-help-button" name="button">Hire a Personal Assistant</button>
+      <button type="button" class="get-help-button" name="button">Minor Home Repair</button>
+      <button type="button" class="get-help-button" name="button">Hire a Painter</button>
+      <button type="button" class="get-help-button" name="button">Yard Cleanup & Removal</button>
+      <button type="button" class="get-help-button" name="button">Laundry Services</button>
+      <button type="button" class="get-help-button" name="button">Furniture Delivery</button>
+      <button type="button" class="get-help-button" name="button">Light Installation</button>
+      <button type="button" class="get-help-button" name="button">Hanging Pictures Help</button>
+      <button type="button" class="get-help-button" name="button">Closet Organizing Services</button>
+      <button type="button" class="get-help-button" name="button">Furniture Removal</button>
+      <button type="button" class="get-help-button" name="button">Furniture Movers</button>
+      <button type="button" class="get-help-button" name="button">Disassemble Furniture</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid">
+      <p class="footer-text footer-follow">Follow us! We're friendly:<img class="footer-img" src="Downloaded images\facebook.png" alt="Facebook">|<img class="footer-img" src="Downloaded images\twitter.png" alt="Twitter">|<img class="footer-img"
+          src="Downloaded images\insta.png" alt="Instagram"></p>
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="footer-text footer-discover footer-h1">Discover</p>
+          <p class="footer-p">
+            Become a Tasker <br>
+            Services By City <br>
+            All Services <br>
+            Buy a Gift Card <br>
+            Elite Taskers <br>
+            Help
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-text footer-company footer-h1">Company</p>
+          <p class="footer-p">
+            About Us <br>
+            Careers <br>
+            Press <br>
+            TaskRabbit for Good <br>
+            Blog <br>
+            Terms & Privacy <br>
+            California Consumer Notice <br>
+            Do Not Sell My Personal Information
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-text footer-download footer-h1">Download our app</p>
+          <p class="footer-p">Tackle your to-do list wherever you are with our mobile app.</p>
+          <button type="button" class="getmore-apple footer-button footer-apple getmore-button" name="button"><i class="fab fa-apple"></i> Apple Store</button>
+          <button type="button" class="getmore-android footer-button getmore-button" name="button"><i class="fab fa-google-play"></i> Google Play</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FIXED DIV -->
+  <button class="fixed-button" type="button" name="button">HELP</button>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- always keep jquery script above js, so that jquery codes in js loads before js. else js wont recogize the codes -->
+  <script src="index.js" charset="utf-8"></script>
+  <!-- if you put js in head, it will load before and html tag  -->
+  <!-- therefore its best practice to keep it here before the body closing tag -->
+</body>
+
+</html>
